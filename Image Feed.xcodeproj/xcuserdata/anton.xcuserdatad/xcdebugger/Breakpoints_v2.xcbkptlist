@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6E0B5E40-1B43-4A99-85C5-F7CF342AE89D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Feed/SingleImageViewController/SingleImageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "SingleImageViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - a63a340b3f74f9fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Image_Feed.SingleImageViewController"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - 5aec2b60a32e83e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Image_Feed.SingleImageViewController"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3"
+                  endingLineNumber = "3"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - 4fada6c717e5fce6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Image_Feed.SingleImageViewController&gt;"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - 5801ef9cc444e220"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Image_Feed.SingleImageViewController&gt;"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3"
+                  endingLineNumber = "3"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - 9f09e0ad739984c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.__deallocating_deinit"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - 5aec2b60a32e8403"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Image_Feed.SingleImageViewController"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "99444EC7-C99D-471E-82D1-ED961057D3CE - 5801ef9cc444e5c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Feed.SingleImageViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Image_Feed.SingleImageViewController&gt;"
+                  moduleName = "Image Feed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anton/Documents/Git/Image-Feed/Image%20Feed/SingleImageViewController/SingleImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54C8F383-50A8-449C-8DF7-925E9FB5BF32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Feed/SingleImageViewController/SingleImageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SingleImageViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
