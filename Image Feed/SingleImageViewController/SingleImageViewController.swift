@@ -1,6 +1,6 @@
 import UIKit
 
-final class SingleImageViewController: UIViewController {
+    final class SingleImageViewController: UIViewController {
     var image: UIImage! {
         didSet {
             guard isViewLoaded else { return }
@@ -8,7 +8,7 @@ final class SingleImageViewController: UIViewController {
         }
     }
         
-    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var imageView: UIImageView!
         
         override func viewDidLoad() {

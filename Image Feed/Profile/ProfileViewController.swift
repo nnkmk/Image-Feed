@@ -2,7 +2,7 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    let avatarImageView: UIImageView = {
+    private lazy var avatarImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "avatar")
         imageView.layer.cornerRadius = 35
@@ -11,7 +11,7 @@ final class ProfileViewController: UIViewController {
         return imageView
     }()
     
-    let nameLabel: UILabel = {
+    private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 23)
         label.textColor = .white
@@ -20,7 +20,7 @@ final class ProfileViewController: UIViewController {
        return label
     }()
     
-    let loginNameLabel: UILabel = {
+    private lazy var loginNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
         label.textColor = .gray
@@ -29,17 +29,16 @@ final class ProfileViewController: UIViewController {
         return label
     }()
     
-    let descriptionLabel: UILabel = {
+    private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
-        label.font = UIFont(name: "YS DisplayMedium", size: 13)
         label.textColor = .white
         label.text = "Hello, world!"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let logoutButton: UIButton = {
+    private lazy var logoutButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "logout_button"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -66,7 +65,7 @@ final class ProfileViewController: UIViewController {
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             // avatarImageView constraints
-            avatarImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 76),
+            avatarImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32),
             avatarImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             avatarImageView.widthAnchor.constraint(equalToConstant: 70),
             avatarImageView.heightAnchor.constraint(equalToConstant: 70),
@@ -90,7 +89,7 @@ final class ProfileViewController: UIViewController {
             descriptionLabel.heightAnchor.constraint(equalToConstant: 18),
             
             // logoutButton constraints
-            logoutButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 99),
+            logoutButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 55),
             logoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             logoutButton.widthAnchor.constraint(equalToConstant: 24),
             logoutButton.heightAnchor.constraint(equalToConstant: 24)
