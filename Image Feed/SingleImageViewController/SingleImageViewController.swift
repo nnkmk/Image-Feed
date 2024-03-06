@@ -1,7 +1,7 @@
 import UIKit
 
     final class SingleImageViewController: UIViewController {
-    var image: UIImage! {
+    var image: UIImage? {
         didSet {
             guard isViewLoaded else { return }
             imageView.image = image
@@ -19,11 +19,17 @@ import UIKit
         dismiss(animated: true, completion: nil)
     }
     @IBAction func didTapShareButton(_ sender: UIButton) {
-         let share = UIActivityViewController(
-            activityItems: [image],
-            applicationActivities: nil
-        )
-        present(share, animated: true, completion: nil)
+        if let image = image {
+            let share = UIActivityViewController(activityItems: [image], applicationActivities: nil
+            )
+            present(share, animated: true, completion: nil)
+        }
+        
+//         let share = UIActivityViewController(
+//            activityItems: [image as Any],
+//            applicationActivities: nil
+//        )
+//        present(share, animated: true, completion: nil)
     }
     
     private func rescaleAndCenterImageInScrollView(image: UIImage) {
