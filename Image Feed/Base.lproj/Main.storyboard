@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bsX-TU-9b8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bsX-TU-9b8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--ImageList-->
         <scene sceneID="oWg-z3-4nL">
             <objects>
-                <viewController title="ImageList" id="ilX-k2-dxU" customClass="ImagesListViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagesListViewController" title="ImageList" id="ilX-k2-dxU" customClass="ImagesListViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yJv-Fx-WRB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,31 +111,10 @@
                             <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         </tabBarAppearance>
                     </tabBar>
-                    <connections>
-                        <segue destination="ilX-k2-dxU" kind="relationship" relationship="viewControllers" id="mZ4-uV-3Qk"/>
-                        <segue destination="wnL-bK-9yA" kind="relationship" relationship="viewControllers" id="gpE-E5-fO8"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYK-Us-4hV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2297" y="59"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="aVT-Au-JMw">
-            <objects>
-                <viewController title="Profile" id="wnL-bK-9yA" customClass="ProfileViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yJY-xV-S7M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="DfQ-fW-7pj"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="Fqg-hK-8lu"/>
-                    <navigationItem key="navigationItem" id="K0P-3O-gn2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5s4-RN-NIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1388" y="445"/>
+            <point key="canvasLocation" x="-2323" y="-275"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="Ums-t9-r6T">
@@ -211,7 +190,7 @@
         <!--Auth View Controller-->
         <scene sceneID="tl6-tK-J3Z">
             <objects>
-                <viewController id="UVn-lC-hJg" customClass="AuthViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" id="UVn-lC-hJg" customClass="AuthViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KaY-JI-AUl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,7 +352,6 @@
         <image name="share_button" width="50" height="50"/>
         <image name="splash_screen_logo" width="73" height="75.5"/>
         <image name="tab_editorial_active" width="30" height="30"/>
-        <image name="tab_profile_active" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

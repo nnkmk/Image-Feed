@@ -1,35 +1,36 @@
 import UIKit
 
-    final class SingleImageViewController: UIViewController {
-    var image: UIImage? {
+class SingleImageViewController: UIViewController {
+    
+    var image: UIImage! {
         didSet {
-            guard isViewLoaded else { return }
-            imageView.image = image
+            if isViewLoaded {
+                imageView.image = image
+                rescaleAndCenterImageInScrollView(image: image)
+            }
         }
     }
-        
+    
     @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var imageView: UIImageView!
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            imageView.image = image
-        }
-    @IBAction func didTapBackButton() {
+    
+    @IBAction func didTapBackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    @IBAction func didTapShareButton(_ sender: UIButton) {
-        if let image = image {
-            let share = UIActivityViewController(activityItems: [image], applicationActivities: nil
-            )
-            present(share, animated: true, completion: nil)
-        }
+    
+    @IBAction func didTapShareButton(_ sender: Any) {
+        let activityController = UIActivityViewController(activityItems: [imageView.image!], applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        scrollView.delegate = self
+        imageView.image = image
+        rescaleAndCenterImageInScrollView(image: image)
+        scrollView.minimumZoomScale = 0.1
+        scrollView.maximumZoomScale = 1.25
         
-//         let share = UIActivityViewController(
-//            activityItems: [image as Any],
-//            applicationActivities: nil
-//        )
-//        present(share, animated: true, completion: nil)
     }
     
     private func rescaleAndCenterImageInScrollView(image: UIImage) {
@@ -55,3 +56,4 @@ extension SingleImageViewController: UIScrollViewDelegate {
         imageView
     }
 }
+
